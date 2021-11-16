@@ -1,5 +1,11 @@
 def find_shortest_string(arr)
-  # type your code in here
+  min = arr[0]
+  arr.each do |str|
+    if str.length < min.length
+      min = str
+    end
+  end
+  min
 end
 
 if __FILE__ == $PROGRAM_NAME
